@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Virtual Slime Pet</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body onload="GameStart()">
+
+
+    <div>This is day <span id="time">0</span>!</div>
+
+	<script src="script.js"></script>
+
+
+	<header>Virtual Slime Pet!</header>
+
+	<!--- I thought of this like, One big container, two containers that go left and right, the left container only needs a section for the pet's info, but the right container needs
+	to have 2 different containers, one on top and one below, to display the pet's sprite and the interactive buttons, but I just could not set it up properly so the website
+	looks... funny(?) --->
+
+	<div id=Container1>
+		<div id=ContainerLeft>
+			<section>
+				<h2 id="PetsName"></h2>
+				<h3 id="Age"></h3>
+
+				<table style="padding-left: 18px">
+					<tr>
+						<td><h3 style="color:#eb3a34;">Health</h3></td>
+						<td><progress id="HealthBar" max="100"></progress></td>
+					</tr>
+					<tr>
+						<td><h3 style="color:#eba834;">Hunger</h3></td>
+						<td><progress id="HungerBar" max="100"></progress></td>
+					</tr>
+					<tr>
+						<td><h3 style="color:#34ebdc;">Happiness</h3></td>
+						<td><progress id="HappinessBar" max="100"></progress></td>
+					</tr>
+				</table>
+				</section>
+		</div>
+		<div id=ContainerRight>
+			<div id=Container4>
+				<a><img src="Sprite1.png" alt="Virtual Pet Sprite";></a>
+			</div>
+			<div id=Container5>
+				<button id="buttons" onclick="FeedingTime()">Feed!</button>
+				<button id="buttons" onclick="CleaningTime()">Clean!</button>
+				<button id="buttons" onclick="PlayTime()">Play!</button>
+			</div>
+		</div>
+	</div>
+	<footer style="align-content: center; float: bottom;" ><button id="buttons" onclick="ReStart()">Restart the game!</button></footer>
+
+</body>
+</html>
+
+
